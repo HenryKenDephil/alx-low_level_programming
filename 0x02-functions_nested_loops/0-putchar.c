@@ -1,11 +1,13 @@
-#include <main.h>
-#include <stdio.h>
+#include "main.h"
+
+
 /**
- * main-main body
- * -putchar writes the character c on stdout 
- * Return on success 0
+ * main - Entry point
+ *
+ * Return: nothing, return void
  */
-int -putchar(char c)
+
+int main(void)
 {
 	_putchar('_');
 	_putchar('p');
@@ -16,5 +18,6 @@ int -putchar(char c)
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
+
 	return (0);
 }
