@@ -1,13 +1,11 @@
 #include <stdio.h>
-#include <stdio.h>
-
+void print_faster(void) __attribute__((constructor));
 /**
- * bmain - function executed before main
- * Return: no return.
+ * print_faster - prints faster than main
+ * Return: none, void
  */
-
-void __attribute__ ((constructor)) bmain()
+void print_faster(void)
 {
-	printf("You're beat! and yet, you must allow");
-	printf(",\nI bore my house upon my back!\n");
+	printf("You're beat! and yet, you must allow,\n");
+	printf("I bore my house upon my back!\n");
 }
