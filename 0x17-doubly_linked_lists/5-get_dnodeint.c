@@ -1,21 +1,11 @@
 #include "lists.h"
 
 /**
- * struct dlistint_s - doubly linked list
- * @n: integer
- * @prev: points to the previous node
- * @next: points to the next node
- *
- * Description: doubly linked list node structure
- * 
+ * get_dnodeint_at_index - returns nth node of doubly linked list
+ * @head: pointer to head node
+ * @index: node index to be returned
+ * Return: node on success, else NULL
  */
-typedef struct dlistint_s
-{
-    int n;
-    struct dlistint_s *prev;
-    struct dlistint_s *next;
-} dlistint_t;
-
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
 	unsigned int count;
