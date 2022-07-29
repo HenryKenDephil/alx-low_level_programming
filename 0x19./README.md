@@ -2,8 +2,7 @@
 
 `monty` is an interpreter of Monty ByteCodes files, which is a scripting language just like Python.
 
-## About the Monty language
-This is a language that contains specific instructions to manipulate data information (stacks or queues), where each instruction (*called opcode*) is sended per line. Files which contains Monty byte codes usually have the `.m` extension.
+##  Monty language contains specific instructions to manipulate data information (stacks or queues), where each instruction (*called opcode*) is sended per line. Files which contains Monty byte codes usually have the `.m` extension.
 
 Example (`file.m`):
 ```bash
@@ -106,6 +105,5 @@ L3: unknown instruction pcx
 ### Return value
 When there is no errors, `monty` returns `0`. Otherwise, returns `1`
 
-## Authors
-* Jorge Zafra: [Twitter](https://twitter.com/JorgeZafra7) - [GitHub](https://github.com/jorgezafra94)
-* Luis Chaparro: [Twitter](https://twitter.com/luischaparroc) - [GitHub](https://github.com/luischaparroc)
+author, the project was done as a solo work and owns the Github HenryKenDephil
+
