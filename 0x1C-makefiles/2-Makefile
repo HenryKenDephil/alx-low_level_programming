@@ -1,0 +1,7 @@
+CC = gcc
+SRC = main.c school.c
+NAME = school.o
+OBJ = $(SRC:c=o) #the script replaces instances of .c ending with .o in SRC
+
+all: $(OBJ)
+    $(CC) $(OBJ) -o $(NAME)
