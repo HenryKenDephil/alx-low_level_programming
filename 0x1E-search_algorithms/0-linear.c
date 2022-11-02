@@ -12,11 +12,13 @@
 int linear_search(int *array, size_t size, int value)
 {
     int i;
+    int size;
     for(i = 0; i < size; i++)
     {
+        printf("the value is found at index %d\n", i, array[i]);
         if(array[i] == value)
         {
-            printf("the value is found at index %d\n", i);
+            return i;
             break;
         }
     }
