@@ -6,7 +6,7 @@
 *@array: pointer to the first element of arra to search in
 *@size: number of elements inarray
 *value: the value or target to be searched
-*Return: Always a value and exit with Success
+*Return: Always returns a value and exit with Success
 */
 int binary_search(int *array, size_t size, int value)
 {
