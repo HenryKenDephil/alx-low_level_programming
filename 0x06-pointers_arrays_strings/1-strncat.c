@@ -1,30 +1,27 @@
 #include "main.h"
-#include "stdio.h"
 
 /**
- * _strcat ; concatenates two strings
- * @dest; destination
- * @src; source to be concatenated
- * @n; the size of bytes used from src
- * Return; return the pointer to dest
+ * _strncat - concatenates two strings
+ *
+ * @dest: destination
+ * @src: source
+ * @n: number of bytes
+ *
+ * Return: dest
  */
-
 char *_strncat(char *dest, char *src, int n)
 {
-		int count = 0, count2 = 0;
+	int i, j;
 
-		while (*(dest + count) != '\0')
-		{
-			count++;
-		}
+	/* To get length of destination */
+	for (i = 0; dest[i] != '\0';)
+		i++;
 
-		while (count2 < n)
-		{
-			*(dest + count) = *(src + count2);
-			if (*(src + count2) == '\0')
-				break;
-			count++;
-			count2++;
-		}
-		return (dest);
+	/* To get length of source to be copied */
+	for (j = 0; src[j] != '\0' && j < n; j++)
+		dest[i + j] = src[j];
+
+	/* To add null terminator */
+	dest[i + j] = '\0';
+	return (dest);
 }

@@ -1,26 +1,23 @@
 #include "main.h"
-#include "stdio.h"
 
 /**
- * puts2; prints one char output of a string type
- * @str; string input
- * Return; no return
+ * puts2 - prints every other character of a string
+ * starting with first character, followed by /n
+ *
+ * @str: string to be printed
  */
-
 void puts2(char *str)
 {
+	int len;
+	char l;
 
-	int count = 0;
-
-	while (count >= 0)
+	for (len = 0; *(str + len) != 0; len++)
 	{
-		if (str[count] =='\n')
+		if (len % 2 == 0)
 		{
-			_putchar('\n');
-			break;
+			l = *(str + len);
+			_putchar(l);
 		}
-		if (count %2 == 0)
-			_putchar(str[count]);
-		count++;
 	}
+	_putchar('\n');
 }
